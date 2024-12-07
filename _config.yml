@@ -1,7 +1,7 @@
-title: Your awesome title
+title: CB3017
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: rameshbalan
+  email: balan.ramesh@mahindrauniversity.edu
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -29,7 +29,7 @@ plugins:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - about.md
+  - syllabus.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
