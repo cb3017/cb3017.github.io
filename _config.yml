@@ -1,6 +1,6 @@
 title: CB3017
 author:
-  name: rameshbalan
+  name: Balan Ramesh
   email: balan.ramesh@mahindrauniversity.edu
 
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -29,6 +29,10 @@ plugins:
 # in order as they should show up.
 header_pages:
   - syllabus.md
+  - module1.md
+  - module2.md
+  - module3.md
+  - module4.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
