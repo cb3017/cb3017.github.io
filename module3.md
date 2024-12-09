@@ -13,3 +13,5 @@ Mechanisms of oncogenesis by viruses, integration, latency, and viral protein in
 2. Van Doorslaer K, Burk RD. Evolution of human papillomavirus carcinogenicity. Adv Virus Res. 2010;77:41-62. doi: 10.1016/B978-0-12-385034-8.00002-8. PMID: 20951869; PMCID: PMC3690501.
 3. Mesri, E. A., Feitelson, M. A., & Munger, K. (2014). Human viral oncogenesis: a cancer hallmarks analysis. Cell host & microbe, 15(3), 266-282.
 4. Blazquez, A. C., Berenstein, A. J., Torres, C., Izquierdo, A., Lezama, C., Moscatelli, G., ... & Preciado, M. V. (2021). Comprehensive evolutionary analysis of complete Epstein–Barr virus genomes from argentina and other geographies. Viruses, 13(6), 1172.
+5. Ong, C. K., Chan, S. Y., Campo, M. S., Fujinaga, K., Mavromara-Nazos, P., Labropoulou, V., ... & Villa, L. L. (1993). Evolution of human papillomavirus type 18: an ancient phylogenetic root in Africa and intratype diversity reflect coevolution with human ethnic groups. Journal of virology, 67(11), 6424-6431.
+6. Bravo, I. G., & Félez-Sánchez, M. (2015). Papillomaviruses: Viral evolution, cancer and evolutionary medicine. Evolution, medicine, and public health, 2015(1), 32-51.
