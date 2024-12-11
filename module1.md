@@ -17,8 +17,8 @@ Evolution of Antibiotic Resistance in Bacteria
 
 #### Evolution of Antibiotic Resistance in Bacteria
 - Evolutionary Rate in Prokaryotes
-	![Biek et. al. 2015](figs/g1.jpg)
-	![Biek et. al. 2015](figs/g2.jpg)
+	- ![Biek et. al. 2015](./figs/g1.jpg)
+	- ![Biek et. al. 2015](./figs/g2.jpg)
 - Horizontal Gene Transfer
 	- Short Introduction to [Horizontal Gene Transfer](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/20%3A_Phylogenies_and_the_History_of_Life/20.03%3A_Perspectives_on_the_Phylogenetic_Tree/20.3B%3A_Horizontal_Gene_Transfer)
 	- [![HHMI Video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/dRY7DlTmtnw?feature=shared)
