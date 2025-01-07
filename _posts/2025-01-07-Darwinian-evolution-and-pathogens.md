@@ -12,9 +12,10 @@ Darwinian evolution refers to the process by which species change over time thro
 1. **Variation:** Pathogens exhibit genetic variation, often due to mutations, horizontal gene transfer, or reassortment.  
 2. **Heritability:** Genetic traits are passed from one generation of pathogens to the next.  
 3. **Differential Reproductive Success:** Some traits increase a pathogen’s fitness, allowing it to replicate and spread more effectively.  
-4. **Time:** Over multiple generations, advantageous traits become more common, leading to evolution.
+4. **Time:** Over multiple generations, advantageous traits become more common, leading to evolution.  
 
-Ref: [Koonin, E. V. (2009). Darwinian evolution in the light of genomics. Nucleic acids research, 37(4), 1011-1034.](https://academic.oup.com/nar/article-pdf/37/4/1011/7179750/gkp089.pdf)
+Reference: [Koonin, E. V. (2009). Darwinian evolution in the light of genomics. Nucleic acids research, 37(4), 1011-1034.](https://academic.oup.com/nar/article-pdf/37/4/1011/7179750/gkp089.pdf)
+
 ---
 
 #### **Natural Selection Applied to Pathogens**  

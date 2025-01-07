@@ -5,7 +5,7 @@ permalink: /module1/
 ---
 
 ### Foundations of Evolutionary Theory and Population Genetics
-Darwinian evolution and natural selection applied to pathogens. Hardy-Weinberg equilibrium and deviations in microbial populations. Mutation, migration, genetic drift, and selection in pathogen populations.
+[Darwinian evolution and natural selection applied to pathogens](https://cb3017.github.io/misc/2025/01/07/Darwinian-evolution-and-pathogens.html). Hardy-Weinberg equilibrium and deviations in microbial populations. Mutation, migration, genetic drift, and selection in pathogen populations.
 Evolution of Antibiotic Resistance in Bacteria
 
 #### Darwinian evolution and natural selection 
