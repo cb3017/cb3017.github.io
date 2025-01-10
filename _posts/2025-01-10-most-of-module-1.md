@@ -4,7 +4,7 @@ title: "Core Themes of Module 1"
 categories: misc
 ---
 
-### **1. Mutation**  
+#### **1. Mutation**  
 **Definition:**  
 Mutation is the process by which changes occur in the genetic material (DNA or RNA) of a pathogen. These changes can arise due to errors during replication, environmental factors (e.g., UV radiation, chemical exposure), or interactions with the host.  
 
@@ -77,7 +77,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
 
 #### **Summary of Their Impact on Pathogen Populations**  
 | **Process**       | **Source of Variation/Change**       | **Effect on Pathogen Population**|
-|--------------------|-------------------------------------|----------------------------------|
+|:---|---|---:|
 | **Mutation**       | Random changes in genetic material   | Introduces new genetic variation; may result in resistance, virulence, or immune escape.          |
 | **Migration**      | Movement of pathogens or genes       | Introduces new alleles; increases genetic diversity and facilitates adaptation.                   |
 | **Genetic Drift**  | Random changes in allele frequencies | Reduces genetic diversity; can fix or eliminate alleles by chance, especially in small populations.|
