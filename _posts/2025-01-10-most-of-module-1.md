@@ -95,7 +95,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
 
 ---
 
-### 1. **Introduction to Hardy-Weinberg Equilibrium**  
+#### 1. **Introduction to Hardy-Weinberg Equilibrium**  
 
 - **Definition of Hardy-Weinberg Equilibrium:** The principle that states that allele frequencies in a population will remain constant from generation to generation in the absence of evolutionary influences.
 - **Conditions/Assumptions for Hardy-Weinberg Equilibrium:**
@@ -106,7 +106,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - No natural selection.
 - **Mathematical Foundation:**
   - Hardy-Weinberg equation:
-    $p^2 + 2pq + q^2 = 1$
+      $p^2 + 2pq + q^2 = 1$
 
   Where:
   - **p** = frequency of the dominant allele.
@@ -115,8 +115,8 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - **q²** = frequency of homozygous recessive genotype.
   - **2pq** = frequency of heterozygous genotype.
 
-  An alternative form for the allele frequencies is:
-    $p + q = 1$
+  - An alternative form for the allele frequencies is:
+      $p + q = 1$
 
 - **"Why does H-W Equilibrium principle matter?** Some of the questions about human genetics like:  
   - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
@@ -130,12 +130,12 @@ Answering such questions becomes much easier with some understanding of populati
 
 [Mertens, T. R. (1992). Introducing students to population genetics & the Hardy-Weinberg principle. The American Biology Teacher, 54(2), 103-107.](https://www.jstor.org/stable/pdf/4449417.pdf)[Chen, J. J. (2010). The Hardy-Weinberg principle and its applications in modern population genetics. Frontiers in Biology, 5, 348-353.](https://link.springer.com/article/10.1007/s11515-010-0580-x). Hartl and Clark 1989.
 
-### 2. **Applying Hardy-Weinberg to Microbial Populations**  
+#### 2. **Applying Hardy-Weinberg to Microbial Populations**  
 - Effect of **clonal reproduction** vs. **horizontal gene transfer** in microbial populations on the applicability of Hardy-Weinberg equilibrium.
 
 In clonally reproducing microbes, such as bacteria and many other microorganisms, the Hardy-Weinberg equilibrium (HWE) is generally **not applicable**, because these organisms reproduce asexually, which violates key assumptions of the HWE model. Here’s a breakdown of why HWE is not relevant and some nuances related to clonally reproducing microbes:
 
-### **Why Hardy-Weinberg Doesn't Apply:**
+##### **Why Hardy-Weinberg Doesn't Apply:**  
 1. **No Random Mating**:
    - Clonally reproducing microbes replicate by binary fission (or similar processes), producing genetically identical offspring. This eliminates the concept of random mating, a core assumption of HWE.
 
@@ -148,12 +148,12 @@ In clonally reproducing microbes, such as bacteria and many other microorganisms
 4. **Population Dynamics**:
    - Microbes often experience rapid population bottlenecks, selective sweeps, and genetic drift due to environmental pressures, all of which disrupt equilibrium. HWE assumes a large population which implies a stable population dynamics.
 
-### **Are There Any Exceptions?**
+##### **Are There Any Exceptions?**  
 While strict HWE does not apply to clonally reproducing microbes, some sexually recombining microbes (e.g., bacteria capable of horizontal gene transfer or *Plasmodium* parasites undergoing sexual reproduction in the mosquito stage) may show partial HWE-like patterns under specific conditions. However:
    - Horizontal gene transfer introduces foreign DNA into the population, which violates assumptions of no mutation/migration in HWE.
    - Rare recombination events may introduce some genetic diversity, but these are not frequent enough to establish true Hardy-Weinberg equilibrium.
 
-### **Alternative Approaches for Clonal Microbes**:
+##### **Alternative Approaches for Clonal Microbes**:
 Since HWE is not applicable, population genetics in clonal microbes uses alternative frameworks, such as:
 1. **Multilocus Genotypic Diversity**:
    - Instead of focusing on allele frequencies, researchers examine the diversity of genotypes across loci to assess clonal population structure.
@@ -164,21 +164,21 @@ Since HWE is not applicable, population genetics in clonal microbes uses alterna
 3. **Neutral Theory and Coalescent Models**:
    - These models focus on the evolutionary history of alleles under drift, mutation, and selection, without assuming random mating or diploidy.
 
-### **Summary**:
+##### **Summary**:
 Hardy-Weinberg equilibrium is not a suitable framework for studying clonally reproducing microbes due to their haploid nature, asexual reproduction, and non-random inheritance. Instead, population geneticists rely on alternative models and methods to understand genetic variation and structure in these organisms.
 
-### 3. **Solving Hardy-Weinberg Problems**
+#### 3. **Solving Hardy-Weinberg Problems**
 - **Level 1:**
- - Given the frequency of a recessive allele or genotype in a population, calculate the frequency of the dominant allele and genotype.
- - Example: "In a population of bacteria, 36% of individuals show a recessive phenotype. What are the allele frequencies of the dominant and recessive alleles?"
+  - Given the frequency of a recessive allele or genotype in a population, calculate the frequency of the dominant allele and genotype.
+  - Example: "In a population of bacteria, 36% of individuals show a recessive phenotype. What are the allele frequencies of the dominant and recessive alleles?"
 - **Level 2:**
- - Given heterozygous and homozygous genotype frequencies, calculate the allele frequencies.
- - Example: "If 70% of the population is heterozygous and 10% are homozygous recessive, what is the frequency of the dominant allele?"
+  - Given heterozygous and homozygous genotype frequencies, calculate the allele frequencies.
+  - Example: "If 70% of the population is heterozygous and 10% are homozygous recessive, what is the frequency of the dominant allele?"
 - **Level 3:**
- - Incorporate **mutation**, **migration**, **genetic drift**, or **selection** as forces that may influence Hardy-Weinberg equilibrium.
- - Example: "Given that a certain mutation increases fitness in a population, what would the new allele frequencies look like after a few generations?"
+  - Incorporate **mutation**, **migration**, **genetic drift**, or **selection** as forces that may influence Hardy-Weinberg equilibrium.
+  - Example: "Given that a certain mutation increases fitness in a population, what would the new allele frequencies look like after a few generations?"
 
-### 4. **Deviations from Hardy-Weinberg Equilibrium**
+<!-- #### 4. **Deviations from Hardy-Weinberg Equilibrium**
    - **Mutation:**
      - Mutations can alter allele frequencies by introducing new alleles into the population.
      - Discuss how mutations in microbial populations (e.g., antibiotic resistance) can deviate from Hardy-Weinberg equilibrium.
@@ -196,9 +196,9 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
      - Example: Bacteria with antibiotic resistance have a survival advantage in the presence of antibiotics.
    - **Selection for Virulence or Resistance:**
      - Selection pressure can favor alleles that increase resistance to environmental stresses (e.g., antibiotics) or increase virulence in a microbial host.
-     - Discuss **antibiotic resistance** as a clear example of selection in microbial populations.
+     - Discuss **antibiotic resistance** as a clear example of selection in microbial populations. -->
 
-<!-- ### 5. **Case Studies: Microbial Populations and Hardy-Weinberg**
+<!-- #### 5. **Case Studies: Microbial Populations and Hardy-Weinberg**
    - **Antibiotic Resistance:**
      - Microbial populations often deviate from Hardy-Weinberg equilibrium due to selective pressure from antibiotic use.
      - Case study: Study how the frequency of resistant alleles increases when antibiotics are overused.
@@ -209,7 +209,7 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
      - Pathogens evolve to become more virulent or resistant to host immune responses. Microbial evolution is often driven by natural selection.
      - Case study: Study of how viruses evolve under immune pressure or how pathogens evolve during an outbreak.
 
-### 6. **Microbial Evolution in the Context of Population Genetics**
+#### 6. **Microbial Evolution in the Context of Population Genetics**
    - **Genetic Variation in Microbial Populations:**
      - Emphasize the importance of genetic variation for microbial evolution. Discuss **mutations**, **recombination**, and **gene flow** in microbes.
    - **Role of Population Size and Bottlenecks:**
@@ -218,14 +218,14 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
      - Explore the role of microbial population genetics in the spread of infectious diseases.
      - Example: Evolution of virulence factors and resistance patterns in pathogens. -->
 
-### 7. **Simulation**
+#### 4. **Simulation**
    - **Simulation of Hardy-Weinberg Problems:**
      - Provide scenarios where students calculate allele and genotype frequencies using real or hypothetical data sets.
      - Use data on mutation rates, migration patterns, or selective pressures to solve real-world microbial problems.
    - **Modeling Microbial Populations:**
      - Create models of microbial population genetics that simulate changes in allele frequencies based on mutation, selection, migration, and drift.
 
-### 8. **Fun things if you find this interesting.**
+#### 5. **Fun things if you find this interesting.**
    - **Evolutionary Trends in Microbes:**
      - Discuss long-term evolutionary trends in microbial populations, especially in response to human interventions like vaccination and antibiotics.
      - Can you implement a ML based theoritical model based on for a specific microbe based on realistic data from the existing literature? 
