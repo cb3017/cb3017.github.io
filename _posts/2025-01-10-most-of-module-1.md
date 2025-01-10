@@ -105,8 +105,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - Random mating.
   - No natural selection.
 - **Mathematical Foundation:**
-  - Hardy-Weinberg equation:
-      $p^2 + 2pq + q^2 = 1$
+  - Hardy-Weinberg equation: $`p^2 + 2pq + q^2 = 1`$
 
   Where:
   - **p** = frequency of the dominant allele.
@@ -115,8 +114,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - **q²** = frequency of homozygous recessive genotype.
   - **2pq** = frequency of heterozygous genotype.
 
-  - An alternative form for the allele frequencies is:
-      $p + q = 1$
+  - An alternative form for the allele frequencies is $`p + q = 1`$
 
 - **"Why does H-W Equilibrium principle matter?** Some of the questions about human genetics like:  
   - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
@@ -220,12 +218,12 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
 
 #### 4. **Simulation**
    - **Simulation of Hardy-Weinberg Problems:**
-     - Provide scenarios where students calculate allele and genotype frequencies using real or hypothetical data sets.
+     - Examples to calculate allele and genotype frequencies using real or hypothetical data sets.
      - Use data on mutation rates, migration patterns, or selective pressures to solve real-world microbial problems.
    - **Modeling Microbial Populations:**
      - Create models of microbial population genetics that simulate changes in allele frequencies based on mutation, selection, migration, and drift.
 
 #### 5. **Fun things if you find this interesting.**
    - **Evolutionary Trends in Microbes:**
-     - Discuss long-term evolutionary trends in microbial populations, especially in response to human interventions like vaccination and antibiotics.
+     - Think about long-term evolutionary trends in microbial populations, especially in response to human interventions like vaccination and antibiotics.
      - Can you implement a ML based theoritical model based on for a specific microbe based on realistic data from the existing literature? 
