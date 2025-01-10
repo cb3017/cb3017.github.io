@@ -106,9 +106,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - No natural selection.
 - **Mathematical Foundation:**
   - Hardy-Weinberg equation:
-  <p>
-    p^2 + 2pq + q^2 = 1 
-  </p>
+    $p^2 + 2pq + q^2 = 1$
 
   Where:
   - **p** = frequency of the dominant allele.
@@ -118,10 +116,7 @@ Selection is the process by which certain traits (or genetic variants) increase 
   - **2pq** = frequency of heterozygous genotype.
 
   An alternative form for the allele frequencies is:
-
-  <p>
-    p + q = 1 
-  </p>
+    $p + q = 1$
 
 - **"Why does H-W Equilibrium principle matter?** Some of the questions about human genetics like:  
   - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
