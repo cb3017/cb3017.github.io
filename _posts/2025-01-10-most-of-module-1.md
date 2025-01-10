@@ -99,17 +99,15 @@ Selection is the process by which certain traits (or genetic variants) increase 
 
 - **Definition of Hardy-Weinberg Equilibrium:** The principle that states that allele frequencies in a population will remain constant from generation to generation in the absence of evolutionary influences.
 - **Conditions/Assumptions for Hardy-Weinberg Equilibrium:**
- - No mutation.
- - No migration (no gene flow).
- - Large population size (no genetic drift).
- - Random mating.
- - No natural selection.
+  - No mutation.
+  - No migration (no gene flow).
+  - Large population size (no genetic drift).
+  - Random mating.
+  - No natural selection.
 - **Mathematical Foundation:**
- - Hardy-Weinberg equation:
+  - Hardy-Weinberg equation:
   <p>
-    $$ 
     p^2 + 2pq + q^2 = 1 
-    $$
   </p>
 
   Where:
@@ -122,17 +120,15 @@ Selection is the process by which certain traits (or genetic variants) increase 
   An alternative form for the allele frequencies is:
 
   <p>
-    $$ 
     p + q = 1 
-    $$
   </p>
 
 - **"Why does H-W Equilibrium principle matter?** Some of the questions about human genetics like:  
- - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
- - I'm confused! How can 0 be the most common of the blood types if it is a recessive trait?  
- - If Huntington's disease is a dominant trait, shouldn't three-fourths of the population have Huntington's while one-fourth have the normal phenotype?  
- - Shouldn't recessive traits gradually be 'swamped-out' so they disappear from the population?  
- - How do scientists estimate the frequencies of heterozygous carriers of certain recessive traits in human populations?  
+  - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
+  - I'm confused! How can 0 be the most common of the blood types if it is a recessive trait?  
+  - If Huntington's disease is a dominant trait, shouldn't three-fourths of the population have Huntington's while one-fourth have the normal phenotype?  
+  - Shouldn't recessive traits gradually be 'swamped-out' so they disappear from the population?  
+  - How do scientists estimate the frequencies of heterozygous carriers of certain recessive traits in human populations?  
 Answering such questions becomes much easier with some understanding of population genetics and H-W principle. Even if the student gains an understanding only at an intuitive and nonquantitative level, reasonable answers to such questions can be formulated.
 
 > In other words, H-W principle provides a null hypothesis if genes are following Mendel's laws of inheritance. 
