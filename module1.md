@@ -14,16 +14,19 @@ Evolution of Antibiotic Resistance in Bacteria
 
 #### Hardy-Weinberg equilibrium and deviations in microbial populations.
 
+- [Frog Animation by Amoeba Sisters](https://youtu.be/7S4WMwesMts?feature=shared)
+
 #### Mutation, migration, genetic drift, and selection in pathogen populations.
 
+- Horizontal Gene Transfer
+	- Short Introduction to [Horizontal Gene Transfer](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/20%3A_Phylogenies_and_the_History_of_Life/20.03%3A_Perspectives_on_the_Phylogenetic_Tree/20.3B%3A_Horizontal_Gene_Transfer)
+	- [![HHMI Video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/dRY7DlTmtnw?feature=shared)
 
 #### Evolution of Antibiotic Resistance in Bacteria
 - Evolutionary Rate in Prokaryotes
 	- ![Biek et. al. 2015](figs/gr1.jpg)
 	- ![Biek et. al. 2015](figs/gr2.jpg)
-- Horizontal Gene Transfer
-	- Short Introduction to [Horizontal Gene Transfer](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/20%3A_Phylogenies_and_the_History_of_Life/20.03%3A_Perspectives_on_the_Phylogenetic_Tree/20.3B%3A_Horizontal_Gene_Transfer)
-	- [![HHMI Video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/dRY7DlTmtnw?feature=shared)
+
 
 ### References
 1. Darwin and microbiology. Nat Rev Microbiol 7, 546 (2009).

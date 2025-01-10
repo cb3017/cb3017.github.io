@@ -216,14 +216,14 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
      - Explore the role of microbial population genetics in the spread of infectious diseases.
      - Example: Evolution of virulence factors and resistance patterns in pathogens. -->
 
-#### 4. **Simulation**
+<!-- #### 4. **Simulation**
    - **Simulation of Hardy-Weinberg Problems:**
      - Examples to calculate allele and genotype frequencies using real or hypothetical data sets.
      - Use data on mutation rates, migration patterns, or selective pressures to solve real-world microbial problems.
    - **Modeling Microbial Populations:**
      - Create models of microbial population genetics that simulate changes in allele frequencies based on mutation, selection, migration, and drift.
-
-#### 5. **Fun things if you find this interesting.**
+ -->
+#### 4. **Fun things if you find this interesting.**
    - **Evolutionary Trends in Microbes:**
      - Think about long-term evolutionary trends in microbial populations, especially in response to human interventions like vaccination and antibiotics.
      - Can you implement a ML based theoritical model based on for a specific microbe based on realistic data from the existing literature? 
