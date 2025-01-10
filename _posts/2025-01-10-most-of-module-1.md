@@ -75,13 +75,23 @@ Selection is the process by which certain traits (or genetic variants) increase 
 - [Evolution (Oxford Readers) - Ridley, Mark: Books ISBN: 9780199267941](https://global.oup.com/academic/product/evolution-9780199267941?cc=in&lang=en&)
 
 
-#### **Summary of Their Impact on Pathogen Populations**  
-| **Process** | **Source of Variation/Change** | **Effect on Pathogen Population** |
-|:---:|:---:|:---:|
-| **Mutation** | Random changes in genetic material | Introduces new genetic variation; may result in resistance, virulence, or immune escape. |
-| **Migration** | Movement of pathogens or genes | Introduces new alleles; increases genetic diversity and facilitates adaptation. |
-| **Genetic Drift** | Random changes in allele frequencies | Reduces genetic diversity; can fix or eliminate alleles by chance, especially in small populations. |
-| **Selection** | Environmental or host pressures | Increases frequency of advantageous traits (e.g., resistance); shapes pathogen adaptation. |  
+#### **Summary**  
+
+- Mutation
+ - *Source of Variation/Change*: Random changes in genetic material.
+ - *Effect on Pathogen Population*: Introduces new genetic variation; may result in resistance, virulence, or immune escape.
+
+- Migration
+ - *Source of Variation/Change*: Movement of pathogens or genes.
+ - *Effect on Pathogen Population*: Introduces new alleles; increases genetic diversity and facilitates adaptation.
+
+- Genetic Drift
+ - *Source of Variation/Change*: Random changes in allele frequencies.
+ - *Effect on Pathogen Population*: Reduces genetic diversity; can fix or eliminate alleles by chance, especially in small populations.
+
+- Selection
+ - *Source of Variation/Change*: Environmental or host pressures.
+ - *Effect on Pathogen Population*: Increases frequency of advantageous traits (e.g., resistance); shapes pathogen adaptation.
 
 ---
 
@@ -95,13 +105,25 @@ Selection is the process by which certain traits (or genetic variants) increase 
  - Random mating.
  - No natural selection.
 - **Mathematical Foundation:**
- - Hardy-Weinberg equation: \( p^2 + 2pq + q^2 = 1 \)
-   - \( p \) = frequency of the dominant allele.
-   - \( q \) = frequency of the recessive allele.
-   - \( p^2 \) = frequency of homozygous dominant genotype.
-   - \( q^2 \) = frequency of homozygous recessive genotype.
-   - \( 2pq \) = frequency of heterozygous genotype.
- - Alternative form for allele frequencies: \( p + q = 1 \).
+ - Hardy-Weinberg equation:
+
+ $$
+ p^2 + 2pq + q^2 = 1
+ $$
+
+ Where:
+ - \( p \) = frequency of the dominant allele.
+ - \( q \) = frequency of the recessive allele.
+ - \( p^2 \) = frequency of homozygous dominant genotype.
+ - \( q^2 \) = frequency of homozygous recessive genotype.
+ - \( 2pq \) = frequency of heterozygous genotype.
+
+ An alternative form for the allele frequencies is:
+
+ $$
+ p + q = 1
+ $$
+
 - **"Why does H-W Equilibrium principle matter?** Some of the questions about human genetics like:  
  - If type 0 blood is a recessive trait, shouldn't 0 be the most rare of the ABO blood groups?  
  - I'm confused! How can 0 be the most common of the blood types if it is a recessive trait?  
