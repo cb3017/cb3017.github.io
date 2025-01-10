@@ -76,8 +76,8 @@ Selection is the process by which certain traits (or genetic variants) increase 
 
 
 #### **Summary of Their Impact on Pathogen Populations**  
-| **Process**       | **Source of Variation/Change**       | **Effect on Pathogen Population**                                                                 |
-|--------------------|--------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Process**       | **Source of Variation/Change**       | **Effect on Pathogen Population**|
+|--------------------|-------------------------------------|----------------------------------|
 | **Mutation**       | Random changes in genetic material   | Introduces new genetic variation; may result in resistance, virulence, or immune escape.          |
 | **Migration**      | Movement of pathogens or genes       | Introduces new alleles; increases genetic diversity and facilitates adaptation.                   |
 | **Genetic Drift**  | Random changes in allele frequencies | Reduces genetic diversity; can fix or eliminate alleles by chance, especially in small populations.|
