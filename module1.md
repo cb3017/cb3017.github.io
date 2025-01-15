@@ -5,7 +5,7 @@ permalink: /module1/
 ---
 
 ### Foundations of Evolutionary Theory and Population Genetics
-[Darwinian evolution and natural selection applied to pathogens](https://cb3017.github.io/misc/2025/01/07/Darwinian-evolution-and-pathogens.html). [Hardy-Weinberg equilibrium and deviations in microbial populations. Mutation, migration, genetic drift, and selection in pathogen populations](https://cb3017.github.io/misc/2025/01/10/most-of-module-1.html). [Evolution of Antibiotic Resistance in Bacteria](https://cb3017.github.io/misc/2025/01/13/intro-to-resistance.html).
+[Darwinian evolution and natural selection applied to pathogens](https://cb3017.github.io/misc/2025/01/07/Darwinian-evolution-and-pathogens.html). [Hardy-Weinberg equilibrium and deviations in microbial populations. Mutation, migration, genetic drift, and selection in pathogen populations](https://cb3017.github.io/misc/2025/01/10/most-of-module-1.html). [Evolution of Antibiotic Resistance in Bacteria](https://cb3017.github.io/2025/01/13/intro-to-resistance.html).
 
 #### Darwinian evolution and natural selection 
 
