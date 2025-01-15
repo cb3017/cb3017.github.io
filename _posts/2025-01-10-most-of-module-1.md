@@ -226,4 +226,4 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
 #### 4. **Fun things if you find this interesting.**
    - **Evolutionary Trends in Microbes:**
      - Think about long-term evolutionary trends in microbial populations, especially in response to human interventions like vaccination and antibiotics.
-     - Can you implement a ML based theoritical model based on for a specific microbe based on realistic data from the existing literature? 
+     - Can you implement a ML based theoritical model based on a specific microbe and realistic data from the existing literature? 
