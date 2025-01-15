@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Schedule
-permalink: /syllabus/
+permalink: /schedule/
 ---
 
 CB3017 will broadly cover the fundamentals of evolutionary biology with respect to pathogens and then looking at case studies from bacteria, virus and fungus.
