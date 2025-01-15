@@ -182,7 +182,8 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
 </details>
 
   - Example Plot.
-  - ![Example HWE](../figs/example_HWe.png)
+  - ![Example HWE](figs/example_HWe.png)  
+
 <!-- #### 4. **Deviations from Hardy-Weinberg Equilibrium**
    - **Mutation:**
      - Mutations can alter allele frequencies by introducing new alleles into the population.
