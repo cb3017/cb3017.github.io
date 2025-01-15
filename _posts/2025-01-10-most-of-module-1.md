@@ -181,7 +181,7 @@ Hardy-Weinberg equilibrium is not a suitable framework for studying clonally rep
   <script src="https://gist.github.com/rameshbalan/c0c8f971ea9e3490715c4068483a00db.js"></script>
 </details>
 
-  ![Example](./figs/example_HWe.png)  
+  ![Example](../figs/example_HWe.png)  
 
 <!-- #### 4. **Deviations from Hardy-Weinberg Equilibrium**
    - **Mutation:**
