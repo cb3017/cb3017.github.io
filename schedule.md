@@ -48,3 +48,43 @@ CB3017 will broadly cover the fundamentals of evolutionary biology with respect 
 |Minor I|15%|Module 1 and 2|4th week of Feb|
 |Minor II|20%|Module 1, 2, and 3| 3rd week of Feb|
 |End Term Exam|30%| Complete Syllabus| 1st and 2nd week of June|
+
+### **Projects**  
+
+- Create a tool to simulate microbial population in Rshiny or Jupter Notebook to model the effects of mutation, genetic drift, migration, and natural selection in a pathogen of your choice. Explore allele frequency from exisisting literature to check if the population is evolving as expected (Hardy-Weinberg equilibrium). How are is it different from existing tools like SLiM, Genepop on the web and simuPOP?
+
+- Analyze genomic datasets of *E. coli*, or *K. pneumoniae*, or *M. tuberculosis* to identify the variability in resistance genes and identify fitness trade-offs using CARD and Snippy.
+
+- Explore tools like VIRIDIC, BEAST, CoeViz 2, Signor 3.0 and HyPhy etc. to create models of viral protein-host interactions, identify genomic features driving oncogenesis, and explore co-evolutionary dynamics.
+
+- Predict evolutionary trajectories of pathogens under varying climatic conditions and analyze co-evolutionary arms races using the Red Queen Hypothesis or similar. Explore USDA Integrated Pathogen Modeling Program – Dynamic Prediction and Maxent. 
+
+#### Rubric for Project Evaluation.
+
+| **Criteria**                              | **Weight** | **Score Range** | **Comments**                        |
+|------------------------------------------|------------|-----------------|-------------------------------------|
+| **1. Project Design & Implementation**   | **20%**    | **0-20**        |                                     |
+| 1a. Clarity of Purpose                   | 5%         | 0-5             |                                     |
+| 1b. Appropriateness of Methodology        | 5%         | 0-5             |                                     |
+| 1c. Complexity and Innovation             | 5%         | 0-5             |                                     |
+| 1d. Implementation Details               | 5%         | 0-5             |                                     |
+| **2. Data Analysis & Interpretation**    | **30%**    | **0-30**        |                                     |
+| 2a. Data Collection and Quality          | 10%        | 0-10            |                                     |
+| 2b. Analysis Methodology                 | 10%        | 0-10            |                                     |
+| 2c. Interpretation and Insights          | 10%        | 0-10            |                                     |
+| **3. Comparison with Existing Tools**    | **20%**    | **0-20**        |                                     |
+| 3a. Tool Evaluation and Comparison       | 10%        | 0-10            |                                     |
+| 3b. Contextualization in the Literature  | 10%        | 0-10            |                                     |
+| **4. Scientific Rigor & Reproducibility**| **15%**    | **0-15**        |                                     |
+| 4a. Scientific Accuracy                  | 5%         | 0-5             |                                     |
+| 4b. Reproducibility                      | 5%         | 0-5             |                                     |
+| 4c. Statistical Validity                 | 5%         | 0-5             |                                     |
+| **5. Communication & Presentation**      | **15%**    | **0-15**        |                                     |
+| 5a. Clarity and Structure                | 5%         | 0-5             |                                     |
+| 5b. Visualization                        | 5%         | 0-5             |                                     |
+| 5c. Discussion and Conclusion            | 5%         | 0-5             |                                     |
+| **6. Creativity and Impact**             | **10%**    | **0-10**        |                                     |
+| 6a. Innovation                           | 5%         | 0-5             |                                     |
+| 6b. Potential Impact                     | 5%         | 0-5             |                                     |
+| **Total**                                | **100%**   | **0-100**       |                                     |
+
