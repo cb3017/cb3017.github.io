@@ -26,3 +26,21 @@ CB3017 will broadly cover the fundamentals of evolutionary biology with respect 
 | Week 14  | Climate Change and Plant Pathogen Evolution | Effects of climate change on pathogen evolution and adaptive strategies                        |
 | Week 15  | Course Review and Emerging Topics           | Recap of major themes; discussion of emerging research and open questions                      |
 | Week 16  | Final Exam                                  | Comprehensive exam covering all course topics                                                 |
+
+### **Objectives**  
+1. Explain how principles of Darwinian evolution and population genetics apply to pathogens, with a focus on mutation, genetic drift, migration, and selection, to understand their adaptive strategies.  
+2. Illustrate the evolutionary dynamics of antibiotic resistance and selective pressures in microbial populations, highlighting real-world scenarios like vaccine introduction and drug usage.  
+3. Describe the molecular mechanisms of oncogenesis by viruses and their co-evolution with host immune systems, using case studies of oncogenic viruses.  
+4. Explore evolutionary adaptations in plant pathogens in response to environmental changes, emphasizing co-evolution with hosts and using case studies to demonstrate key concepts like horizontal gene transfer and the Red Queen Hypothesis.  
+
+### **Outcomes**  
+1. Analyze and interpret the genetic and evolutionary forces shaping pathogen populations, including Hardy-Weinberg equilibrium and deviations.  
+2. Model evolutionary scenarios such as the emergence of antibiotic resistance or the effects of vaccines on pathogen fitness landscapes.  
+3. Identify and evaluate molecular mechanisms of drug resistance or viral oncogenesis in pathogens using genomic tools.  
+4. Apply evolutionary principles to real-world challenges in plant and microbial pathogens, including predicting pathogen adaptation to changing environmental or selective pressures.  
+
+### **Evaluation**
+
+| **Week** | **Topic**   | **Content** | **Tentative Dates/Deadlines**|
+|----------|-------------|-------------|------------------------------|
+|Assignment|15%|3 in-class quizzes, 5% each|Jan 31, Feb 21, April 11|

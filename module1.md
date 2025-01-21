@@ -18,7 +18,7 @@ permalink: /module1/
 #### Mutation, migration, genetic drift, and selection in pathogen populations.
 
 - Horizontal Gene Transfer
-	-![Role of HGT in Antibiotic Resistance in Bacteria](https://www.science.org/cms/10.1126/science.aax3879/asset/2b79b7ae-02a0-4aa7-a49e-1604665a1f71/assets/graphic/365_1082_f1.jpeg). <sup>R. Craig MacLean, Alvaro San Millan ,The evolution of antibiotic resistance.Science365,1082-1083(2019).DOI:10.1126/science.aax3879</sup>
+	-![Role of HGT in Antibiotic Resistance in Bacteria](https://www.science.org/cms/10.1126/science.aax3879/asset/2b79b7ae-02a0-4aa7-a49e-1604665a1f71/assets/graphic/365_1082_f1.jpeg)<sup>R. Craig MacLean, Alvaro San Millan ,The evolution of antibiotic resistance.Science365,1082-1083(2019).DOI:10.1126/science.aax3879</sup>
 	- Short Introduction to [Horizontal Gene Transfer](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/20%3A_Phylogenies_and_the_History_of_Life/20.03%3A_Perspectives_on_the_Phylogenetic_Tree/20.3B%3A_Horizontal_Gene_Transfer)
 	- [![HHMI Video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/dRY7DlTmtnw?feature=shared)
 
