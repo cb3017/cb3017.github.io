@@ -44,3 +44,7 @@ CB3017 will broadly cover the fundamentals of evolutionary biology with respect 
 | **Week** | **Topic**   | **Content** | **Tentative Dates/Deadlines**|
 |----------|-------------|-------------|------------------------------|
 |Assignment|15%|3 in-class quizzes, 5% each|Jan 31, Feb 21, April 11|
+|Project|20%|4 Module Specific Projects, 5% each| Last working Friday of Feb, March, April, May|
+|Minor I|15%|Module 1 and 2|4th week of Feb|
+|Minor II|20%|Module 1, 2, and 3| 3rd week of Feb|
+|End Term Exam|30%| Complete Syllabus| 1st and 2nd week of June|
