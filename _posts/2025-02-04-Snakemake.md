@@ -1,3 +1,95 @@
+# **Reproducible and Scalable Workflows with Snakemake**  
+
+
+## **Lab Objectives**  
+
+By the end of the lab, you will be able to:  
+
+-[] Connect to an **HPC cluster** and navigate the command line  
+-[] Install **Miniconda** and configure **Micromamba** for package management  
+-[] Set up a **Snakemake** environment and execute workflows  
+-[] Develop a simple **differential expression (DE) analysis pipeline** using Snakemake  
+
+
+### Environment Setup  
+To conduct the analysis, we will set up a computational environment on an HPC system using **Miniconda, Micromamba**, and install essential bioinformatics tools.
+
+#### Login to HPC  
+Access the HPC system via SSH:
+```sh
+ssh username@hpc-address
+```
+Replace `username` with your actual HPC username and `hpc-address` with the correct hostname or IP.
+
+#### Install Miniconda  
+##### Download Miniconda  
+```sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+##### Install Miniconda  
+```sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+Follow the prompts:
+- Press **Enter** to continue.
+- Scroll through the license agreement using **Spacebar**, then type `yes` to accept.
+- Choose an installation directory (default: `$HOME/miniconda3`).
+- Type `yes` to initialize Miniconda.
+
+##### Activate Miniconda  
+Restart the shell or run:
+```sh
+source ~/.bashrc
+```
+Verify installation:
+```sh
+conda --version
+```
+
+###### In case of an error  
+
+ - Make sure to comment the `module load` line from `~/.bashrc`
+ - Thanks Medha! for fixing this!
+
+#### Install Micromamba  
+Micromamba is a lightweight alternative to Conda.
+##### Install Micromamba  
+```sh
+conda install -n base -c conda-forge micromamba -y
+```
+##### Verify Micromamba Installation  
+```sh
+micromamba --version
+```
+###### In case of an error
+
+Try the following command to see if micromamba is configured right!
+
+```sh
+echo 'eval "$(micromamba shell hook -s bash)"' >> ~/.bashrc
+source ~/.bashrc
+```
+ - Thanks Medha! for fixing this!
+ - Make sure to comment the `module load` line from `~/.bashrc`
+---
+
+#### **Creating a Snakemake Environment**  
+
+1. **Creating a new environment**  
+   ```bash
+   micromamba create -n snakemake -c bioconda snakemake-minimal
+   ```  
+2. **Activating the environment**  
+   ```bash
+   micromamba activate snakemake
+   ```  
+3. **Testing installation**  
+   ```bash
+   snakemake --help
+   ```
+
+---
+
 ## **🔬 Dissecting Snakemake for Differential Expression Analysis**
 
 ### **Step 1: The Big Picture (What Are We Building?)**
@@ -95,14 +187,79 @@ rule deseq2_analysis:
     input:
         expand("counts/{sample}.txt", sample=config["samples"])
     output:
-        "results/deseq2_results.csv"
+        csv="results/deseq2_results.csv",
+        volcano="plots/volcano.png"
     conda:
         "envs/deseq2.yaml"
-    script:
-        "scripts/deseq2_analysis.R"
+    shell:
+        "scripts/deseq2_analysis.R -s {input} -o {output}"
 ```
 - Runs a **DESeq2 R script** for differential expression analysis.
 
+```r
+# Load required libraries
+library(DESeq2)
+library(tidyverse)
+library(optparse)
+
+# Command-line arguments parsing
+option_list <- list(
+  make_option(c("-s", "--samples"), type = "character", help = "Comma-separated list of sample files (counts/*.txt)"),
+  make_option(c("-m", "--metadata"), type = "character", help = "Path to metadata file (metadata.txt)"),
+  make_option(c("-o", "--output"), type = "character", default = "DE_results.csv", help = "Output file name [default: %default]")
+)
+
+opt <- parse_args(OptionParser(option_list = option_list))
+
+# Check if required arguments are provided
+if (is.null(opt$samples) | is.null(opt$metadata)) {
+  stop("Error: Please provide both --samples and --metadata arguments.")
+}
+
+# Process sample files
+sample_files <- unlist(strsplit(opt$samples, ","))  # Split CSV input into a list
+sample_names <- gsub("counts/|.txt", "", sample_files)  # Extract sample names from file paths
+
+# Load count data
+count_list <- lapply(sample_files, function(f) read.table(f, header = TRUE, row.names = 1))
+count_matrix <- do.call(cbind, count_list)
+
+# Rename columns to sample names
+colnames(count_matrix) <- sample_names
+
+# Load metadata
+metadata <- read.table(opt$metadata, header = TRUE, sep = "\t", row.names = 1)
+
+# Ensure metadata matches column names of count matrix
+metadata <- metadata[colnames(count_matrix), , drop = FALSE]
+
+# Create DESeq2 dataset
+dds <- DESeqDataSetFromMatrix(countData = count_matrix, 
+                              colData = metadata, 
+                              design = ~ condition)  # Modify `condition` if needed
+
+# Run DESeq2 differential expression analysis
+dds <- DESeq(dds)
+
+# Get results
+res <- results(dds, contrast = c("condition", "treated", "control"))  # Adjust conditions accordingly
+res <- res[order(res$padj), ]  # Order by adjusted p-value
+
+# Save results
+write.csv(as.data.frame(res), file = opt$output)
+
+# Plot MA plot
+plotMA(res, main = "MA Plot", ylim = c(-5, 5))
+
+# Volcano Plot
+res_df <- as.data.frame(res)
+ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj))) +
+  geom_point(aes(color = padj < 0.05)) +
+  theme_minimal() +
+  labs(title = "Volcano Plot", x = "Log2 Fold Change", y = "-Log10 Adjusted P-value")
+ggsave("plots/volcano.png")
+
+```
 ---
 
 ### **Step 4: Stitching It All Together**
@@ -113,7 +270,6 @@ rule report:
     input:
         "results/deseq2_results.csv",
         "plots/volcano.png",
-        "plots/pca.png"
     output:
         "final_report.html"
     conda:
@@ -185,7 +341,7 @@ rule deseq2_analysis:
     input: expand("counts/{sample}.txt", sample=SAMPLES)
     output: "results/deseq2_results.csv"
     conda: "envs/deseq2.yaml"
-    script: "scripts/deseq2_analysis.R"
+    shell: "scripts/deseq2_analysis.R"
 
 # Rule: Generate Final Report
 rule report:
@@ -195,7 +351,7 @@ rule report:
         # "plots/pca.png"
     output: "final_report.html"
     conda: "envs/rmarkdown.yaml"
-    script: "scripts/generate_report.R"
+    shell: "scripts/generate_report.R"
 
 # Default rule to run the full pipeline
 rule all:
@@ -221,87 +377,9 @@ threads: 8
 snakemake --use-conda --cores 8
 ```
 
-# **Reproducible and Scalable Workflows with Snakemake**  
 
-
-## **Lesson Objectives**  
-By the end of this lesson, students will be able to:  
-✅ Connect to an **HPC cluster** and navigate the command line  
-✅ Install **Miniconda** and configure **Micromamba** for package management  
-✅ Set up a **Snakemake** environment and execute workflows  
-✅ Develop a simple **differential expression (DE) analysis pipeline** using Snakemake  
-
----
-
-## **Lesson Outline**  
-
-### **🟢 Part 1: Logging into an HPC Cluster**  
-⏳ **Time: 15 min**  
-📌 **Goal**: Ensure students can access the HPC system  
-
-1. **Accessing the cluster**  
-   - Explain SSH and login process  
-   - Example (replace `username` and `hpc.example.edu` accordingly):  
-     ```bash
-     ssh -X username@hpc.example.edu
-     ```  
-   - Troubleshooting SSH access  
-
-2. **Basic commands for navigation**  
-   - Checking **storage quota** (`du -sh`, `df -h`)  
-   - Using **screen** or **tmux** to prevent session loss  
-
----
-
-### **🟢 Part 2: Installing Miniconda and Configuring Micromamba**  
-⏳ **Time: 20 min**  
-📌 **Goal**: Set up an efficient package management system  
-
-1. **Installing Miniconda (if not available on HPC)**  
-   - Download and install Miniconda:  
-     ```bash
-     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-     bash Miniconda3-latest-Linux-x86_64.sh
-     ```  
-   - Follow installation prompts and initialize Conda  
-
-2. **Installing Micromamba for faster environment management**  
-   - Install Micromamba:  
-     ```bash
-     conda install -c conda-forge micromamba
-     ```  
-   - Add Micromamba to shell profile:  
-     ```bash
-     echo 'export MAMBA_EXE=$(which micromamba)' >> ~/.bashrc
-     echo 'export MAMBA_ROOT_PREFIX=~/miniconda3/bin/micromamba' >> ~/.bashrc
-     source ~/.bashrc
-     ```  
-   - Test installation with `micromamba --help`  
-
----
-
-### **🟢 Part 3: Creating a Snakemake Environment**  
-⏳ **Time: 15 min**  
-📌 **Goal**: Set up an isolated environment for Snakemake  
-
-1. **Creating a new environment**  
-   ```bash
-   micromamba create -n snakemake -c conda-forge snakemake-minimal
-   ```  
-2. **Activating the environment**  
-   ```bash
-   micromamba activate snakemake
-   ```  
-3. **Testing installation**  
-   ```bash
-   snakemake --help
-   ```
-
----
-
-### **🟢 Part 4: Writing a Differential Expression (DE) Analysis Pipeline**  
-⏳ **Time: 1.5 - 2 hours**  
-📌 **Goal**: Develop a complete Snakemake workflow  
+<!-- 
+### **Differential Expression (DE) Analysis Pipeline**  
 
 #### **Step 1: Define Inputs and Outputs**  
 - Explain Snakemake workflow logic  
@@ -510,4 +588,4 @@ rule deseq2:
 4. **Submit to HPC with SLURM**  
    ```bash
    sbatch --cpus-per-task=4 --wrap="snakemake --use-conda"
-   ```
+   ``` -->
