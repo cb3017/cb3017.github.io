@@ -1,5 +1,5 @@
 
-### 1. **Alexander Fleming (1929) - "On the Antibacterial Action of Penicillin"**
+### 1. **[Alexander Fleming (1929) - "On the Antibacterial Action of Penicillin"](https://pmc.ncbi.nlm.nih.gov/articles/PMC2048009/pdf/brjexppathol00255-0037.pdf)**
    **Key Points**:
    1. **Discovery of Penicillin**: Fleming identified penicillin as the first antibiotic, derived from the *Penicillium* mold.
    2. **Bactericidal Action**: Penicillin showed a remarkable ability to kill a broad range of bacteria, particularly *Staphylococcus* and *Streptococcus*.
