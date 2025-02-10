@@ -12,7 +12,7 @@
 
 ---
 
-### 2. **Selman Waksman (1947) - "Antibiotics: A Memoir"**
+### 2. **[Smith and Waksman (1947) - "Antibiotics: A Memoir"](https://journals.asm.org/doi/pdf/10.1128/jb.54.2.253-261.1947)**
    **Key Points**:
    1. **Pioneer of Streptomycin**: Waksman was instrumental in discovering streptomycin, the first effective treatment for tuberculosis.
    2. **Antibiotic Diversity**: He explored various antibiotics produced by microorganisms, contributing to the idea that soil bacteria could be a source of new antibiotics.
@@ -25,7 +25,7 @@
 
 ---
 
-### 3. **Datta and Hughes (1983) - "Plasmid-Mediated Bacterial Resistance to Antibiotics"**
+### 3. **[Datta and Hughes (1979) - "Plasmid-Mediated Bacterial Resistance to Antibiotics"](https://sci-hub.se/https://doi.org/10.1016/0147-619X(79)90037-4)**
    **Key Points**:
    1. **Plasmid-mediated Resistance**: This paper was one of the first to document that plasmids (extrachromosomal DNA) carry genes responsible for antibiotic resistance.
    2. **Horizontal Gene Transfer**: It highlighted how plasmids can be transferred between bacteria, facilitating the rapid spread of resistance.
@@ -38,7 +38,7 @@
 
 ---
 
-### 4. **Cohen (1992) - "Epidemiology of Antibiotic Resistance: Implications for the Control of Antimicrobial Resistance"**
+### 4. **[Cohen (1992) - "Epidemiology of Antibiotic Resistance: Implications for the Control of Antimicrobial Resistance"](https://www.jstor.org/stable/pdf/2879831.pdf)**
    **Key Points**:
    1. **Epidemiological Spread**: Cohen focused on the ways in which antibiotic-resistant bacteria spread, particularly in hospitals and healthcare settings.
    2. **Impact of Antibiotic Use**: Highlighted how the misuse and overuse of antibiotics contribute to the rise of resistant strains.
@@ -51,7 +51,7 @@
 
 ---
 
-### 5. **Levy (1992) - "The Antibiotic Paradox: How the Misuse of Antibiotics Destroys Their Curative Powers"**
+### 5. **[Book Review of Levy (1992) - "The Antibiotic Paradox: How the Misuse of Antibiotics Destroys Their Curative Powers"](https://revistes.iec.cat/index.php/IM/article/view/11066/pdf_39)**
    **Key Points**:
    1. **Antibiotic Misuse**: Levy discussed how the misuse of antibiotics—such as overprescription and inappropriate use—accelerates the development of resistance.
    2. **Evolution of Resistance**: He described how bacterial populations evolve in response to antibiotic pressure, with resistant strains surviving and proliferating.
@@ -64,7 +64,7 @@
 
 ---
 
-### 6. **Tomasz (2006) - "Antibiotic Resistance: Origins, Evolution, and Impact"**
+### 6. **[Tomasz (2007) - "Antibiotic Resistance: Origins, Evolution, and Impact"](https://pmc.ncbi.nlm.nih.gov/articles/PMC2701899/pdf/nihms34660.pdf)**
    **Key Points**:
    1. **Evolutionary Basis**: Tomasz proposed that antibiotic resistance is a natural phenomenon, evolving long before the clinical use of antibiotics, likely as a defense against naturally occurring antimicrobial compounds.
    2. **Horizontal Gene Transfer**: The paper emphasized the role of gene transfer mechanisms (e.g., plasmids, transposons) in spreading resistance among bacterial populations.
@@ -77,7 +77,7 @@
 
 ---
 
-### 7. **Davies and Davies (2010) - "Origins and Evolution of Antibiotic Resistance"**
+### 7. **[Davies and Davies (2010) - "Origins and Evolution of Antibiotic Resistance"](https://pmc.ncbi.nlm.nih.gov/articles/PMC2937522/pdf/0016-10.pdf)**
    **Key Points**:
    1. **Ancient Origins**: The authors proposed that antibiotic resistance mechanisms are ancient, having evolved in microorganisms long before the clinical use of antibiotics.
    2. **Gene Sharing**: Described how bacteria can share resistance genes via horizontal gene transfer, promoting the spread of resistance.
@@ -90,7 +90,7 @@
 
 ---
 
-### 8. **Martínez et al. (2007) - "Bacterial Environments and Antimicrobial Resistance"**
+### 8. **[Martínez et al. (2009) - "Bacterial Environments and Antimicrobial Resistance"](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=dacda66d9a38e51730bb2dea7603e96e69b07615)**
    **Key Points**:
    1. **Environmental Factors**: The paper explored how environmental factors, such as polluted water and agricultural runoff, contribute to the spread of antibiotic-resistant bacteria.
    2. **Selection Pressure**: It examined how antibiotics in the environment exert selective pressure on microbial populations, encouraging resistance.
@@ -103,7 +103,7 @@
 
 ---
 
-### 9. **Blair et al. (2015) - "Molecular Mechanisms of Antibiotic Resistance"**
+### 9. **[Blair et al. (2015) - "Molecular Mechanisms of Antibiotic Resistance"](https://www.ars.usda.gov/alternativestoantibiotics/PDF/publications/MolMechAntibiotResistNRM2014.pdf)**
    **Key Points**:
    1. **Mechanisms of Resistance**: The paper detailed the molecular mechanisms behind bacterial resistance, including efflux pumps, enzyme inactivation, and target modification.
    2. **Multi-drug Resistance**: It discussed how bacteria can develop resistance to multiple antibiotics, complicating treatment strategies.
@@ -116,7 +116,7 @@
 
 ---
 
-### 10. **Bush and Bradford (2016) - "Evolving Concepts in Antibiotic Resistance"**
+### 10. **[Bush and Bradford (2019) - "Evolving Concepts in Antibiotic Resistance"](https://sci-hub.se/https://doi.org/10.1038/s41579-019-0159-8)**
    **Key Points**:
    1. **Carbapenem Resistance**: Focused on the rise of carbapenem-resistant *Enterobacteriaceae* (CRE) and its threat to global health.
    2. **New Resistance Mechanisms**: Discussed novel resistance mechanisms, including extended-spectrum beta-lactamases (ESBLs) and carbapenemases.
