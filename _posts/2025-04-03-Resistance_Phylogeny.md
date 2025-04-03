@@ -59,7 +59,7 @@ activity.
 
 ## Instructions 
 
-### Step 1: Evolution of Resistance - Introduction 
+### Evolution of Resistance - Introduction 
 
 The importance of antibiotics in treating bacterial infections and the
 growing threat of antibiotic resistance. [News article(https://www.theguardian.com/society/2025/mar/10/us-aid-cuts-tuberculosis-tb-untreatable-bug-drug-resistance-stop-tb-partnership-who) and [short videos](https://www.youtube.com/watch?v=G3CqsRzuBaQ)
@@ -96,6 +96,100 @@ resistance.</ins>
     in TB) or gyrA (fluoroquinolone resistance in *E. coli*), suggest an
     effective alternative from with the list of antibiotics approved in
     India from CDSCO (pull this from the csv file).
+
+
+<details>
+  <summary><strong>1. SCP Files To/From Cluster</strong></summary>
+  <br>
+  To securely copy files between your local machine and a DGX cluster, use <code>scp</code>:
+
+  <details>
+    <summary><strong>Copy files from local to cluster</strong></summary>
+    <br>
+    <pre><code>scp /path/to/local/file username@10.59.121.172:/path/to/destination/</code></pre>
+    For multiple files or directories:
+    <pre><code>scp -r /path/to/local/directory username@10.59.121.172:/path/to/destination/</code></pre>
+  </details>
+
+  <details>
+    <summary><strong>Copy files from cluster to local</strong></summary>
+    <br>
+    <pre><code>scp username@10.59.121.172:/path/to/dgx/file /path/to/local/destination/</code></pre>
+  </details>
+
+  <details>
+    <summary><strong>Example</strong></summary>
+    <br>
+    If you want to transfer <code>samples.fasta</code> to the cluster:
+    <pre><code>scp samples.fasta username@10.59.121.172:/home/user/project/</code></pre>
+  </details>
+</details>
+
+<details>
+  <summary><strong>2. Run RGI in CARD using the FASTA files (6)</strong></summary>
+  <br>
+  The FASTA files are generated from raw reads processed through a pipeline like 
+  <a href="https://nf-co.re/bacass/2.4.0/" target="_blank">Bacass</a> to get genome and proteome assembly.
+
+  RGI (Resistance Gene Identifier) is used to analyze antimicrobial resistance (AMR) genes.
+
+  <br><br>We will use the online version of the RGI tool for simplicity.
+</details>
+
+<details>
+  <summary><strong>3. Get the Sequence of the Top Hit from CARD</strong></summary>
+  <br>
+  After running RGI, the results contain gene predictions with scores. Extract the best hit:
+
+  <details>
+    <summary><strong>Download the sequence from CARD</strong></summary>
+    <br>
+    1. Go to <a href="https://card.mcmaster.ca/" target="_blank">CARD website</a>.<br>
+    2. Search for the <strong>ARO number</strong> from the top hit.<br>
+    3. Download the reference gene sequence in FASTA format (choose protein).
+  </details>
+</details>
+
+<details>
+  <summary><strong>4. Run BLAST to Identify the Target Gene Across All FASTA Files</strong></summary>
+  <br>
+  Now, compare your FASTA files against the CARD reference sequence.
+
+  <details>
+    <summary><strong>Step 1: Install BLAST</strong></summary>
+    <br>
+    Install BLAST and Biopython if not already installed:
+    <pre><code>conda install -c bioconda -c conda-forge blast biopython</code></pre>
+  </details>
+
+  <details>
+    <summary><strong>Step 2: Identify the Target Gene in All Samples and Reference</strong></summary>
+    <br>
+    Use the provided script:
+    <pre><code>python blast_and_extract.py</code></pre>
+    The <code>extracted_hits.faa</code> file contains the target gene across all the samples and the reference.
+  </details>
+</details>
+
+<details>
+  <summary><strong>5. Run Multiple Sequence Alignment (MSA) Using Clustal Omega</strong></summary>
+  <br>
+  Now, align all sequences in <code>extracted_hits.faa</code> to analyze their similarity.
+
+  <br><br>We will use the online version of Clustal Omega for simplicity.
+</details>
+
+<details>
+  <summary><strong>6. Visualize the Phylogenetic Tree and Interpret Resistance Origin</strong></summary>
+  <br>
+  - <strong>Clustered sequences:</strong> Similar resistance genes are evolving together.<br>
+  - <strong>Distant sequences:</strong> Resistance may have arisen independently or through a single ancestor.<br>
+  - <strong>Reference alignment:</strong> Compare known resistance genes with your unknown sequences.
+</details>
+
+
+<details>
+<summary>Tools and Deets</summary>
 
 ### Identifying Resistance Genes and Analyzing Mutations using CARD 
 
@@ -330,6 +424,11 @@ By analyzing phylogenetic data alongside resistance information from
 CARD, you can uncover how antibiotic resistance arises, spreads, and
 evolves. This deeper understanding is essential for combating the spread
 of resistance.
+<br>
+</details>
+
+<details>
+<summary>So maybe this?</summary>
 
 ## Introduction to TB-Profiler 
 
@@ -471,3 +570,5 @@ results in the amino acid substitution.
     resistance mutations. Further analysis might be needed to
     investigate novel mutations or other factors contributing to drug
     resistance.
+<br>
+</details>
