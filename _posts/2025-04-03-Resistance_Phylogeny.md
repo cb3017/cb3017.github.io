@@ -1,9 +1,19 @@
-# Context {#context .unnumbered}
+---
+layout: post
+title: "Activity 3 - Outbreak Chronicles"
+categories: misc
+---
+
+# Identifying and Tracing Antibiotic Resistance: An Evolutionary Genomics Investigation of Antibiotic Resistance
+
+## Context 
 
 A hospital is experiencing an outbreak of infections caused (most
 likely) by some bacterial pathogen. Some patients recover quickly with
 standard antibiotics, while others do not respond to treatment, leading
 doctors to suspect antibiotic resistance.
+
+![](figs/activity_01.jpeg)
 
 The hospital's microbiology team collects bacterial isolates from
 infected patients through clinical samples such as blood, urine, sputum,
@@ -42,14 +52,14 @@ sequences, you will:
     within the bacteria, or is resistance being transferred between
     bacteria through mobile genetic elements like plasmids?
 
-# Example Paper {#example-paper .unnumbered}
+### Example Paper 
 
-Here is a research article that was the inspiration for this
-article.<https://www.nature.com/articles/s41598-022-11287-5.pdf>
+Here is [a research article](https://www.nature.com/articles/s41598-022-11287-5.pdf) that was the inspiration for this
+activity.
 
-# Instructions {#instructions .unnumbered}
+## Instructions 
 
-## Step 1: Evolution of Resistance - Introduction {#step-1-evolution-of-resistance---introduction .unnumbered}
+### Step 1: Evolution of Resistance - Introduction 
 
 The importance of antibiotics in treating bacterial infections and the
 growing threat of antibiotic resistance. News articles or short videos
@@ -67,15 +77,15 @@ comparing the genomes of different bacterial strains can reveal the
 evolutionary history of resistance, including the origin of resistance
 genes and the accumulation of resistance-conferring mutations.
 
-**Aim:** [You will investigate the evolutionary relationships among
+![](figs/activity_02.jpeg)
+
+**Aim:** <ins>You will investigate the evolutionary relationships among
 several isolates of a specific bacterial species, some known to be
 antibiotic-resistant and others susceptible. You will use genomic data
 to trace the genetic changes associated with the development of
-resistance.]{.underline}
+resistance.</ins>
 
-# Main Quest
-
-## Analysis to identify the mutation and to suggest effective alternative antibiotic {#analysis-to-identify-the-mutation-and-to-suggest-effective-alternative-antibiotic .unnumbered}
+### Analysis to identify the mutation and to suggest effective alternative antibiotic 
 
 1.  You will receive a set of pathogen genome sequences (or accession
     numbers).
@@ -87,9 +97,9 @@ resistance.]{.underline}
     effective alternative from with the list of antibiotics approved in
     India from CDSCO (pull this from the csv file).
 
-## Identifying Resistance Genes and Analyzing Mutations using CARD {#identifying-resistance-genes-and-analyzing-mutations-using-card .unnumbered}
+### Identifying Resistance Genes and Analyzing Mutations using CARD 
 
-## BLASTing against CARD Database {#blasting-against-card-database .unnumbered}
+### BLASTing against CARD Database 
 
 1.  **Accessing the CARD Database:**
 
@@ -163,7 +173,7 @@ resistance.]{.underline}
         information (ARO term, resistance mechanism, antibiotics
         resisted, confidence score).
 
-## Analyzing Mutations with CARD {#analyzing-mutations-with-card .unnumbered}
+### Analyzing Mutations with CARD 
 
 1.  **Focusing on Identified Resistance Genes:**
 
@@ -214,7 +224,7 @@ resistance.]{.underline}
         potential impact based on the protein structure or known
         functional domains (this may require further research).
 
-## Phylogenetic Analysis and Evolutionary Inference {#phylogenetic-analysis-and-evolutionary-inference .unnumbered}
+### Phylogenetic Analysis and Evolutionary Inference 
 
 In this phase, your goal is to understand the evolutionary relationships
 between your bacterial strains and explore how these relationships
@@ -223,7 +233,7 @@ use the genetic sequences of your chosen strains to construct a
 phylogenetic tree and overlay the resistance information you gathered
 from CARD to draw (evolutionary) conclusions.
 
-## Selecting a Suitable Gene for Phylogeny {#selecting-a-suitable-gene-for-phylogeny .unnumbered}
+### Selecting a Suitable Gene for Phylogeny 
 
 The choice of gene is critical for meaningful phylogenetic analysis.
 When guiding your selection, you should consider the following:
@@ -257,7 +267,7 @@ When guiding your selection, you should consider the following:
     -   For housekeeping genes, you should also consider avoiding those
         subject to HGT, as they distort vertical evolutionary insights.
 
-## Multiple Sequence Alignment {#multiple-sequence-alignment .unnumbered}
+### Multiple Sequence Alignment 
 
 Using a tool like Clustal Omega, you'll align the nucleotide sequences
 of your chosen gene across all selected isolates. Alignment is essential
@@ -266,7 +276,7 @@ variations that can inform your phylogenetic tree. Make sure you
 generate a clean alignment, introducing gaps appropriately to handle
 insertions and deletions.
 
-## Phylogenetic Tree Construction {#phylogenetic-tree-construction .unnumbered}
+### Phylogenetic Tree Construction 
 
 To construct your tree, follow these steps:
 
@@ -290,7 +300,7 @@ To construct your tree, follow these steps:
 -   Save your tree in Newick format and visualize it using built-in
     tools from MEGA or Phylogeny.fr.
 
-## Interpreting the Phylogenetic Tree Using CARD Data {#interpreting-the-phylogenetic-tree-using-card-data .unnumbered}
+### Interpreting the Phylogenetic Tree Using CARD Data 
 
 This phase is where you integrate resistance data:
 
@@ -321,7 +331,7 @@ CARD, you can uncover how antibiotic resistance arises, spreads, and
 evolves. This deeper understanding is essential for combating the spread
 of resistance.
 
-# Introduction to TB-Profiler {#introduction-to-tb-profiler .unnumbered}
+## Introduction to TB-Profiler 
 
 TB-Profiler is a web-based/command-line tool designed to predict drug
 resistance profiles of *Mycobacterium tuberculosis* (MTB) based on
@@ -331,13 +341,13 @@ anti-tuberculosis drugs. This tool is particularly useful for
 researchers and clinicians in understanding drug resistance patterns in
 MTB isolates.
 
-# Accessing TB-Profiler Online Tool {#accessing-tb-profiler-online-tool .unnumbered}
+### Accessing TB-Profiler Online Tool 
 
 The TB-Profiler online tool is accessible through a web browser. You can
 find it by searching for \"TB-Profiler\" or by directly accessing the
 following link: <https://tbdr.lshtm.ac.uk/>.
 
-# Uploading Your FASTQ File {#uploading-your-fastq-file .unnumbered}
+### Uploading Your FASTQ File 
 
 FASTQ files are a standard format for storing sequencing reads. Each
 read typically includes a sequence and a quality score. To analyze your
@@ -363,7 +373,7 @@ website. Follow these steps:
 
 6.  And now we wait for the results.
 
-# Understanding the Resistance Associated Mutations {#understanding-the-resistance-associated-mutations .unnumbered}
+### Understanding the Resistance Associated Mutations 
 
 After your FASTQ file(s) are successfully uploaded and processed,
 TB-Profiler will generate a report detailing the identified mutations
@@ -403,7 +413,7 @@ key information in the report:
     specific drugs. This summary is crucial for understanding the
     potential drug resistance profile of the MTB isolate.
 
-# Example of a TB-Profiler Report Snippet {#example-of-a-tb-profiler-report-snippet .unnumbered}
+### Example of a TB-Profiler Report Snippet 
 
 Let's consider a hypothetical example of a snippet from a TB-Profiler
 report:
@@ -427,11 +437,13 @@ Based on this example, the MTB isolate is likely resistant to rifampicin
 and isoniazid. Therefore, fluoroquinolones have a better chance of being
 effective.
 
-# Mutation Visualization {#mutation-visualization .unnumbered}
+### Mutation Visualization 
 
 While the tool primarily provides text-based reports, understanding the
 location of mutations within genes can be helpful. Here's an example
 image illustrating a gene and a potential mutation site:
+
+![](figs/rpoB_mutation.png)
 
 **Note:** The figure depicts a linear representation of the `rpoB` gene,
 showing the DNA sequence with exons and introns. A specific location
@@ -439,7 +451,7 @@ showing the DNA sequence with exons and introns. A specific location
 position of a mutation. A red box indicates the nucleotide change that
 results in the amino acid substitution.
 
-# Important Considerations {#important-considerations .unnumbered}
+### Important Considerations 
 
 -   **Data Quality:** The accuracy of TB-Profiler's predictions depends
     heavily on the quality of your sequencing data. Ensure your FASTQ
