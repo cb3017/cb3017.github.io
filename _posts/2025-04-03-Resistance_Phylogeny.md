@@ -87,7 +87,7 @@ resistance.</ins>
 
 ### Analysis to identify the mutation and to suggest effective alternative antibiotic 
 
-1.  You will receive a set of pathogen genome sequences (or accession
+<!-- 1.  You will receive a set of pathogen genome sequences (or accession
     numbers).
 
 2.  You can use CARD to identify resistance genes.
@@ -96,12 +96,12 @@ resistance.</ins>
     in TB) or gyrA (fluoroquinolone resistance in *E. coli*), suggest an
     effective alternative from with the list of antibiotics approved in
     India from CDSCO (pull this from the csv file).
-
+ -->
 
 <details>
-  <summary><strong>1. SCP Files To/From Cluster</strong></summary>
+  <summary><strong>1. You will receive a set of pathogen genome sequences (protein fasta files). SCP Files To/From Cluster</strong></summary>
   <br>
-  To securely copy files between your local machine and a DGX cluster, use <code>scp</code>:
+  The fasta files are generated from the raw reads that is processed through a pipeline like the [bacass](https://nf-co.re/bacass/2.4.0/) to get the genome and proteome assembly. Given genome assembly and annotation is out of scope for this course, we have proteome assembly directly from the literature. To securely copy files between your local machine and a DGX cluster, use <code>scp</code>:
 
   <details>
     <summary><strong>Copy files from local to cluster</strong></summary>
@@ -189,6 +189,121 @@ resistance.</ins>
 
 
 <details>
+  <summary><strong>Identifying Resistance Genes, Mutations, and Phylogenetic Analysis</strong></summary>
+  <br>
+
+  <h3>Identifying Resistance Genes and Analyzing Mutations using CARD</h3>
+
+  <details>
+    <summary><strong>BLASTing against CARD Database</strong></summary>
+    <br>
+
+    <strong>1. Accessing the CARD Database:</strong><br>
+    - Open a web browser and navigate to the official CARD website: <a href="https://card.mcmaster.ca/" target="_blank">CARD</a>.
+
+    <strong>2. Preparing Protein Sequences:</strong><br>
+    - Obtain protein sequences of potential genes from bacterial genomes.
+    - Save sequences in FASTA format.
+
+    <strong>3. Performing BLAST Search on CARD:</strong><br>
+    - Locate the "BLAST" or "Sequence Analysis" tool.
+    - Select "Protein BLAST."
+    - Paste sequences in the input box.
+    - Choose the "CARD Protein Homologs" database.
+    - Click "Run BLAST."
+
+    <strong>4. Interpreting CARD BLAST Results:</strong><br>
+    - Look at Percent Identity, E-value, ARO term, Resistance Mechanism, and Confidence Score.
+  </details>
+
+  <details>
+    <summary><strong>Analyzing Mutations with CARD</strong></summary>
+    <br>
+
+    <strong>1. Focusing on Identified Resistance Genes:</strong><br>
+    - Select genes found in resistant and susceptible strains.
+
+    <strong>2. Obtaining Protein Sequences for Comparison:</strong><br>
+    - Retrieve sequences from all strains.
+
+    <strong>3. Using CARD for Mutation Information:</strong><br>
+    - Search for genes in CARD.
+    - Look for known mutations.
+
+    <strong>4. Comparing Sequences and Identifying Mutations:</strong><br>
+    - Use multiple sequence alignment tools.
+
+    <strong>5. Correlating Mutations with CARD Data:</strong><br>
+    - Compare with CARD mutation data.
+  </details>
+
+  <details>
+    <summary><strong>Phylogenetic Analysis and Evolutionary Inference</strong></summary>
+    <br>
+
+    <strong>1. Selecting a Suitable Gene for Phylogeny:</strong><br>
+    - Use housekeeping genes (*recA, rpoB, gyrB, 16S rRNA*) or resistance genes.
+
+    <strong>2. Multiple Sequence Alignment:</strong><br>
+    - Use Clustal Omega to align sequences.
+
+    <strong>3. Phylogenetic Tree Construction:</strong><br>
+    - Use MEGA or Phylogeny.fr.
+    - Choose between Distance-based and Character-based methods.
+
+    <strong>4. Interpreting the Phylogenetic Tree Using CARD Data:</strong><br>
+    - Map resistance genes on the tree.
+    - Identify evolutionary patterns of resistance spread.
+  </details>
+</details>
+
+<details>
+  <summary><strong>Using TB-Profiler for Drug Resistance Prediction</strong></summary>
+  <br>
+
+  <h3>Introduction to TB-Profiler</h3>
+  TB-Profiler predicts drug resistance profiles of <i>Mycobacterium tuberculosis</i> (MTB) from sequencing data.
+
+  <details>
+    <summary><strong>Accessing TB-Profiler Online Tool</strong></summary>
+    <br>
+    - Available at <a href="https://tbdr.lshtm.ac.uk/" target="_blank">TB-Profiler</a>.
+  </details>
+
+  <details>
+    <summary><strong>Uploading Your FASTQ File</strong></summary>
+    <br>
+    - Upload sequencing data to TB-Profiler.
+    - Paired-end reads require two FASTQ files.
+  </details>
+
+  <details>
+    <summary><strong>Understanding the Resistance Associated Mutations</strong></summary>
+    <br>
+    <strong>1. Gene Name:</strong> Lists resistance genes like <code>rpoB</code>, <code>katG</code>, and <code>gyrA</code>.<br>
+    <strong>2. Mutation:</strong> Describes nucleotide changes (e.g., <code>S531L</code> in <code>rpoB</code>).<br>
+    <strong>3. Drug Association:</strong> Lists drugs affected.<br>
+    <strong>4. Confidence Score:</strong> Indicates reliability.<br>
+    <strong>5. Resistance Prediction:</strong> Summarizes resistance profile.
+  </details>
+
+  <details>
+    <summary><strong>Mutation Visualization</strong></summary>
+    <br>
+    <img src="https://github.com/cb3017/cb3017.github.io/blob/master/figs/rpoB_mutation.png?raw=true" alt="Mutation Visualization">
+  </details>
+
+  <details>
+    <summary><strong>Important Considerations</strong></summary>
+    <br>
+    - Ensure good data quality for accuracy.<br>
+    - Database updates impact results.<br>
+    - Further analysis may be needed for novel mutations.
+  </details>
+</details>
+
+
+<!-- <details>
 <summary>Tools and Deets</summary>
 
 ### Identifying Resistance Genes and Analyzing Mutations using CARD 
@@ -571,4 +686,4 @@ results in the amino acid substitution.
     investigate novel mutations or other factors contributing to drug
     resistance.
 <br>
-</details>
+</details> -->
