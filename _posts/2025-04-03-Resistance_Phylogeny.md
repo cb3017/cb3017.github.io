@@ -62,7 +62,7 @@ activity.
 ### Evolution of Resistance - Introduction 
 
 The importance of antibiotics in treating bacterial infections and the
-growing threat of antibiotic resistance. [News article(https://www.theguardian.com/society/2025/mar/10/us-aid-cuts-tuberculosis-tb-untreatable-bug-drug-resistance-stop-tb-partnership-who) and [short videos](https://www.youtube.com/watch?v=G3CqsRzuBaQ)
+growing threat of antibiotic resistance. [News article](https://www.theguardian.com/society/2025/mar/10/us-aid-cuts-tuberculosis-tb-untreatable-bug-drug-resistance-stop-tb-partnership-who) and [short videos](https://www.youtube.com/watch?v=G3CqsRzuBaQ)
 highlighting the issue. Mechanism of Antibiotic Action: Think about how
 [different classes of antibiotics work](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2024/01/Classes-of-antibotics-2024.png?fit=2646%2C1871&ssl=1) (e.g., targeting cell wall
 synthesis, protein synthesis, DNA replication). Mechanisms of
@@ -70,7 +70,7 @@ Resistance: Explore [how bacteria develop resistance through various
 mechanisms](https://www.mdpi.com/antibiotics/antibiotics-11-01215/article_deploy/html/images/antibiotics-11-01215-g001.png), emphasizing the role of genetic mutations leading to altered
 target sites, enzymatic inactivation of antibiotics, and efflux pumps.
 Evolutionary Lens on Resistance: [Antibiotic resistance as a prime
-example of evolution in action](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41396-020-00832-7/MediaObjects/41396_2020_832_Fig1_HTML.png). Apply concepts like natural selection,
+example of evolution in action](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41396-020-00832-7/MediaObjects/41396_2020_832_Fig2_HTML.png?as=webp). Apply concepts like natural selection,
 mutation, and horizontal gene transfer in the context of bacterial
 populations exposed to antibiotics. Genomic Insights into Evolution: How
 comparing the genomes of different bacterial strains can reveal the
