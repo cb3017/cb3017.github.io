@@ -13,7 +13,7 @@ likely) by some bacterial pathogen. Some patients recover quickly with
 standard antibiotics, while others do not respond to treatment, leading
 doctors to suspect antibiotic resistance.
 
-![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/activity_01.jpeg)
+![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/activity_01.jpeg?raw=true)
 
 The hospital's microbiology team collects bacterial isolates from
 infected patients through clinical samples such as blood, urine, sputum,
@@ -77,7 +77,7 @@ comparing the genomes of different bacterial strains can reveal the
 evolutionary history of resistance, including the origin of resistance
 genes and the accumulation of resistance-conferring mutations.
 
-![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/activity_02.jpeg)
+![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/activity_02.jpeg?raw=true)
 
 **Aim:** <ins>You will investigate the evolutionary relationships among
 several isolates of a specific bacterial species, some known to be
@@ -443,7 +443,7 @@ While the tool primarily provides text-based reports, understanding the
 location of mutations within genes can be helpful. Here's an example
 image illustrating a gene and a potential mutation site:
 
-![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/rpoB_mutation.png)
+![](https://github.com/cb3017/cb3017.github.io/blob/master/figs/rpoB_mutation.png?raw=true)
 
 **Note:** The figure depicts a linear representation of the `rpoB` gene,
 showing the DNA sequence with exons and introns. A specific location
